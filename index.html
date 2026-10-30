@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siti Meisharah - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0c10',
+                        cardBg: '#151821',
+                        borderBg: '#232736',
+                        accentBlue: '#3b82f6',
+                        accentHover: '#2563eb'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #0b0c10;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.15);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0c10;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #232736;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 antialiased selection:bg-accentBlue selection:text-white pb-16">
+
+    <!-- Header / Floating Navbar -->
+    <header class="fixed top-5 left-1/2 -translate-x-1/2 w-[92%] max-w-5xl bg-cardBg/80 backdrop-blur-md border border-borderBg rounded-full px-5 py-3 flex justify-between items-center z-50 shadow-2xl transition-all duration-300">
+        <a href="#about" class="flex items-center gap-3 group">
+            <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-bold text-sm text-white shadow-md group-hover:scale-105 transition-transform">
+                SM
+            </div>
+            <span class="font-bold text-sm tracking-wide text-white group-hover:text-blue-400 transition-colors">SITI MEISHARAH</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-gray-400">
+            <a href="#about" class="hover:text-white transition-colors">About</a>
+            <a href="#capabilities" class="hover:text-white transition-colors">What I Can Do</a>
+            <a href="#achievement" class="hover:text-white transition-colors">Achievement</a>
+            <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        </nav>
+
+        <a href="#contact" class="bg-white hover:bg-gray-200 text-gray-900 font-semibold text-xs px-5 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-white/10 active:scale-95">
+            Hire Me
+        </a>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-5xl mx-auto px-5 pt-28 space-y-24">
+
+        <!-- SECTION 1: ABOUT ME -->
+        <section id="about" class="pt-8 scroll-mt-28">
+            <div class="text-xs font-bold tracking-widest text-blue-400 uppercase mb-2">About Me</div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left: Profile Image -->
+                <div class="md:col-span-4 flex justify-center">
+                    <div class="hero-avatar-box">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                        <img src="ft mei.jpeg" alt="Siti Meisharah - Foto Resmi UNESA" class="hero-img">
+                    </div>
+                </div>
+
+                <!-- Right: Profile Info -->
+                <div class="md:col-span-8 space-y-5">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">Siti Meisharah</h1>
+                        <p class="text-blue-400 text-sm font-semibold mt-1 flex items-center gap-2">
+                            <span>NIM: 26051214012</span>
+                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+                            <span>S1 Sistem Informasi (Angkatan 2026)</span>
+                        </p>
+                        <p class="text-xs text-gray-400 mt-0.5">Universitas Negeri Surabaya</p>
+                    </div>
+
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Mahasiswi S1 Sistem Informasi Universitas Negeri Surabaya, lulusan SMAN 1 Bukit Sundi jurusan IPA Teknik. Latar belakang teknik membekali saya dengan pola pikir yang logis, analitis, dan terstruktur dalam memecahkan masalah. Saya memiliki minat besar di bidang teknologi informasi, pemrograman, dan pengembangan sistem, serta merupakan pribadi yang disiplin, bertanggung jawab, komunikatif, dan mampu beradaptasi serta bekerja sama secara individu maupun dalam tim.
+                    </p>
+
+                    <!-- Stats Badges -->
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="bg-cardBg border border-borderBg p-3 rounded-xl text-center">
+                            <span class="block text-lg font-bold text-blue-400">2026</span>
+                            <span class="text-[10px] text-gray-400 uppercase tracking-wider">S1 Sistem Informasi</span>
+                        </div>
+                        <div class="bg-cardBg border border-borderBg p-3 rounded-xl text-center">
+                            <span class="block text-lg font-bold text-blue-400">2+</span>
+                            <span class="text-[10px] text-gray-400 uppercase tracking-wider">Prestasi Kabupaten</span>
+                        </div>
+                        <div class="bg-cardBg border border-borderBg p-3 rounded-xl text-center">
+                            <span class="block text-lg font-bold text-blue-400">OSIS</span>
+                            <span class="text-[10px] text-gray-400 uppercase tracking-wider">Ketua Koordinasi</span>
+                        </div>
+                    </div>
+
+                    <!-- CV Download Button -->
+                    <div>
+                        <a href="#contact" class="inline-flex items-center gap-2 bg-cardBg border border-borderBg hover:border-blue-500 text-gray-200 text-xs font-semibold px-4 py-2.5 rounded-xl transition-all duration-300 hover:scale-[1.02]">
+                            <i class="fa-solid fa-file-arrow-down text-blue-400"></i> Download Resume CV
+                        </a>
+                    </div>
+
+                    <!-- Activities Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                        <div class="bg-cardBg/60 border border-borderBg p-3.5 rounded-xl">
+                            <div class="text-blue-400 text-xs font-bold mb-1">Building</div>
+                            <div class="text-xs text-gray-300 font-medium">Logika Komputasi & Analisis Sistem</div>
+                        </div>
+                        <div class="bg-cardBg/60 border border-borderBg p-3.5 rounded-xl">
+                            <div class="text-blue-400 text-xs font-bold mb-1">Exploring</div>
+                            <div class="text-xs text-gray-300 font-medium">Pemrograman & Teknologi Informasi</div>
+                        </div>
+                        <div class="bg-cardBg/60 border border-borderBg p-3.5 rounded-xl">
+                            <div class="text-blue-400 text-xs font-bold mb-1">Learning</div>
+                            <div class="text-xs text-gray-300 font-medium">Pengembangan Sistem Informasi</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: WHAT I CAN DO -->
+        <section id="capabilities" class="scroll-mt-28">
+            <div class="text-xs font-bold tracking-widest text-blue-400 uppercase mb-1">MY CAPABILITIES</div>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-6">What I Can Do</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- Card 01 -->
+                <div class="bg-cardBg border border-borderBg hover:border-blue-500/50 p-6 rounded-2xl transition-all duration-300 glow-effect flex flex-col justify-between">
+                    <div>
+                        <div class="text-2xl font-black text-gray-500 mb-3">01</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Pengembangan Sistem & Pemrograman</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                            Menerapkan fondasi logika komputasi, analisis kuantitatif, dan struktur pemrograman dalam pemecahan masalah teknis serta perancangan awal sistem informasi.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="bg-darkBg border border-borderBg px-3 py-1 rounded-lg text-[11px] text-gray-300 font-medium">Logika Komputasi</span>
+                        <span class="bg-darkBg border border-borderBg px-3 py-1 rounded-lg text-[11px] text-gray-300 font-medium">Analisis Sistem</span>
+                        <span class="bg-darkBg border border-borderBg px-3 py-1 rounded-lg text-[11px] text-gray-300 font-medium">Pemrograman Dasar</span>
+                        <span class="bg-darkBg border border-borderBg px-3 py-1 rounded-lg text-[11px] text-gray-300 font-medium">Algoritma</span>
+                    </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="bg-cardBg border border-borderBg hover:border-blue-500/50 p-6 rounded-2xl transition-all duration-300 glow-effect flex flex-col justify-between">
+                    <div>
+                        <div class="text-2xl font-black text-gray-500 mb-3">02</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Manajemen Acara & Kepemimpinan</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                            Berpengalaman mengoordinasikan tim, manajemen operasional kegiatan keagamaan, serta bertindak sebagai Sie Humas di event tingkat kabupaten.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="bg-darkBg border border-borderBg px-3 py-1 rounded-lg text-[11px] text-gray-300 font-medium">Kepemimpinan</span>
+                        <span class="bg-darkBg border border-borderBg px-3 py-1 rounded-lg text-[11px] text-gray-300 font-medium">Manajemen Acara</span>
+                        <span class="bg-darkBg border border-borderBg px-3 py-1 rounded-lg text-[11px] text-gray-300 font-medium">Komunikasi Public</span>
+                        <span class="bg-darkBg border border-borderBg px-3 py-1 rounded-lg text-[11px] text-gray-300 font-medium">Kerja Sama Tim</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: ACHIEVEMENT -->
+        <section id="achievement" class="scroll-mt-28">
+            <div class="text-xs font-bold tracking-widest text-blue-400 uppercase mb-1">PENCAPAIAN</div>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-6">Achievements</h2>
+            
+            <div class="space-y-4">
+                <!-- Achievement Item 1 -->
+                <div class="bg-cardBg border border-borderBg p-5 rounded-xl flex items-start gap-4 hover:border-blue-500/40 transition-colors">
+                    <div class="w-12 h-12 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl flex-shrink-0 border border-blue-500/20">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-white">Finalis Olimpiade Fisika Tingkat Kabupaten</h3>
+                        <div class="text-xs text-blue-400 font-medium mb-1">2024 • Kabupaten Solok</div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Menjadi finalis olimpiade sains bidang Fisika tingkat kabupaten dengan mengandalkan analisis kuantitatif dan penalaran logika ilmiah yang kuat.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Achievement Item 2 -->
+                <div class="bg-cardBg border border-borderBg p-5 rounded-xl flex items-start gap-4 hover:border-blue-500/40 transition-colors">
+                    <div class="w-12 h-12 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl flex-shrink-0 border border-blue-500/20">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-white">Juara 3 Lomba MSQ Tingkat Kabupaten</h3>
+                        <div class="text-xs text-blue-400 font-medium mb-1">Kabupaten Solok</div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Meraih Juara 3 pada perlombaan Musabaqah Syarhil Qur'an (MSQ) tingkat kabupaten dengan mengasah kemampuan retorika, komunikasi publik, dan penyampaian pesan terstruktur.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Achievement Item 3 -->
+                <div class="bg-cardBg border border-borderBg p-5 rounded-xl flex items-start gap-4 hover:border-blue-500/40 transition-colors">
+                    <div class="w-12 h-12 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl flex-shrink-0 border border-blue-500/20">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-white">Ketua Koordinasi Sekbid Keagamaan OSIS</h3>
+                        <div class="text-xs text-blue-400 font-medium mb-1">2024 - 2025 • SMAN 1 Bukit Sundi</div>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Memimpin kegiatan keagamaan sekolah, bertindak sebagai Ketua Pelaksana Acara Keagamaan 2024-2025, serta menjabat Sie Humas OSIS Cup tingkat Kabupaten Solok.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: CONTACT -->
+        <section id="contact" class="scroll-mt-28">
+            <div class="text-xs font-bold tracking-widest text-blue-400 uppercase mb-1">GET IN TOUCH</div>
+            <div class="bg-cardBg border border-borderBg p-8 md:p-10 rounded-2xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                
+                <div class="md:col-span-6 space-y-4">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                        LET'S WORK <br class="hidden md:block"/>TOGETHER
+                    </h2>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Terbuka untuk peluang kolaborasi, proyek pengembangan sistem informasi, dan aktivitas akademik. Jangan ragu untuk menghubungi saya melalui kontak berikut.
+                    </p>
+                    <div class="pt-2">
+                        <a href="mailto:shamay329@gmail.com" class="inline-flex items-center gap-2 bg-white hover:bg-gray-200 text-gray-900 font-semibold text-xs px-5 py-3 rounded-full transition-all">
+                            Send Me A Message <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-6 space-y-3">
+                    <!-- Email -->
+                    <a href="mailto:shamay329@gmail.com" class="bg-darkBg border border-borderBg p-3.5 rounded-xl flex items-center gap-4 hover:border-blue-500 transition-colors group">
+                        <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-sm group-hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">EMAIL</div>
+                            <div class="text-xs font-semibold text-white">shamay329@gmail.com</div>
+                        </div>
+                    </a>
+
+                    <!-- Phone -->
+                    <div class="bg-darkBg border border-borderBg p-3.5 rounded-xl flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">PHONE / WHATSAPP</div>
+                            <div class="text-xs font-semibold text-white">+62 812 7543 4787</div>
+                        </div>
+                    </div>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/sitimeisharah" target="_blank" rel="noopener noreferrer" class="bg-darkBg border border-borderBg p-3.5 rounded-xl flex items-center gap-4 hover:border-blue-500 transition-colors group">
+                        <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-sm group-hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">GITHUB</div>
+                            <div class="text-xs font-semibold text-white">github.com/sitimeisharah</div>
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/siti-meisharah" target="_blank" rel="noopener noreferrer" class="bg-darkBg border border-borderBg p-3.5 rounded-xl flex items-center gap-4 hover:border-blue-500 transition-colors group">
+                        <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-sm group-hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">LINKEDIN</div>
+                            <div class="text-xs font-semibold text-white">linkedin.com/in/siti-meisharah</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center text-xs text-gray-500 pt-8 pb-4">
+            <p>&copy; 2026 Siti Meisharah • S1 Sistem Informasi Universitas Negeri Surabaya. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Floating Badge -->
+    <div class="fixed bottom-5 left-5 bg-cardBg border border-borderBg px-4 py-2 rounded-full text-xs text-gray-300 flex items-center gap-2 shadow-xl z-40 hover:scale-105 transition-transform cursor-pointer">
+        <i class="fa-solid fa-mug-hot text-amber-500"></i>
+        <span>Get me a coffee <strong class="text-white font-bold">300</strong></span>
+    </div>
+
+</body>
+</html>
